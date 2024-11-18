@@ -784,3 +784,117 @@ body {
     transform: translateY(-10px);
   }
 }
+
+
+
+
+/* General Styling */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  padding: 2rem;
+}
+
+h1, h2 {
+  color: #1abc9c;
+}
+
+/* Project Header */
+.project-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.project-header h1 {
+  font-size: 2.5rem;
+}
+
+.project-header .project-summary {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+/* Project Info */
+.project-info {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.project-info h2 {
+  margin-bottom: 1rem;
+}
+
+.project-technologies ul {
+  list-style: none;
+  padding: 0;
+}
+
+.project-technologies ul li {
+  background: #1abc9c;
+  color: white;
+  padding: 0.5rem 1rem;
+  margin-bottom: 0.5rem;
+  border-radius: 5px;
+}
+
+/* Project Gallery */
+.project-gallery {
+  margin-bottom: 2rem;
+}
+
+.project-gallery .gallery {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.project-gallery .gallery img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.project-gallery .gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* Back Link */
+.back-link {
+  text-align: center;
+}
+
+.cta-button {
+  background-color: #1abc9c;
+  color: white;
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #0f1816;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .project-info {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .project-info .project-technologies,
+  .project-info .project-links {
+    margin-bottom: 1.5rem;
+  }
+}
+
